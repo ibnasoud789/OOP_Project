@@ -46,14 +46,12 @@ public class SubscriptionSceneController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
-
+    
     @FXML
-    private void createAccountButtonOnClicked(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("categorySelectScene.fxml"));
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();       
+    private void createAccountButtonOnClicked(ActionEvent event) {
+        String mail=emailTextField.getText();
+        String password=passwordTextField.getText();
+        String confirmPassword=confirmPasswordTextField.getText();
     }
 
     @FXML
