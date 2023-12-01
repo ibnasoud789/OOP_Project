@@ -54,15 +54,15 @@ public class LogInSceneController implements Initializable {
     @FXML
     private void logInValidateButtonOnClicked(ActionEvent event) throws IOException {
         //validateLogIn();
-        subscriberList= new SubscriberList();
-    }
-    private void validateLogIn(String mail,String password, String userType){
-        for (Subscriber subscriber: subscriberList.getSubscribers()){
-            if (subscriber.getMail().equals(mail) && subscriber.getPassword().equals(password)){
-                logInMessageLabel.setText("Success");
-            }
-        }
-        logInMessageLabel.setText("Failed!");
+      //  subscriberList= new SubscriberList();
+    //}
+    //private void validateLogIn(String mail,String password, String userType){
+      //  for (Subscriber subscriber: subscriberList.getSubscribers()){
+       //     if (subscriber.getMail().equals(mail) && subscriber.getPassword().equals(password)){
+        //        logInMessageLabel.setText("Success");
+          //  }
+        //}
+        //logInMessageLabel.setText("Failed!");
     }
     @FXML
     private void backButtonOnClicked(ActionEvent event) throws IOException {

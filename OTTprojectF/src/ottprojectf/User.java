@@ -8,6 +8,17 @@ package ottprojectf;
  *
  * @author Asif
  */
-public class User {
+public class User extends Subscriber {
+    
+    public User(String mail, String password) {
+        super(mail, password);
+    }
+    String userType;
+
+    public User(String userType, String mail, String password) {
+        super(mail, password);
+        this.userType = userType;
+    }
+    
     
 }
