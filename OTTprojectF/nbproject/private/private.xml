@@ -3,20 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Asif/Documents/GitHub/OOP_Project/OTTprojectF/src/ottprojectf/LogInSceneController.java</file>
-            <file>file:/C:/Users/Asif/Documents/GitHub/OOP_Project/OTTprojectF/src/ottprojectf/SubscriptionFile.java</file>
-            <file>file:/C:/Users/Asif/Documents/GitHub/OOP_Project/OTTprojectF/src/erin/ContentUploadController.java</file>
-            <file>file:/C:/Users/Asif/Documents/GitHub/OOP_Project/OTTprojectF/src/ottprojectf/FileHandler.java</file>
-            <file>file:/C:/Users/Asif/Documents/GitHub/OOP_Project/OTTprojectF/src/ottprojectf/Subscriber.java</file>
-            <file>file:/C:/Users/Asif/Documents/GitHub/OOP_Project/OTTprojectF/src/erin/ContentStreamController.java</file>
-            <file>file:/C:/Users/Asif/Documents/GitHub/OOP_Project/OTTprojectF/src/ottprojectf/Appendable.java</file>
-            <file>file:/C:/Users/Asif/Documents/GitHub/OOP_Project/OTTprojectF/src/erin/ContentCreatorController.java</file>
-            <file>file:/C:/Users/Asif/Documents/GitHub/OOP_Project/OTTprojectF/src/ottprojectf/SubscriptionSceneController.java</file>
-            <file>file:/C:/Users/Asif/Documents/GitHub/OOP_Project/OTTprojectF/src/ottprojectf/CategorySelectSceneController.java</file>
-            <file>file:/C:/Users/Asif/Documents/GitHub/OOP_Project/OTTprojectF/src/ottprojectf/SubscriberList.java</file>
-            <file>file:/C:/Users/Asif/Documents/GitHub/OOP_Project/OTTprojectF/src/ottprojectf/OTTprojectF.java</file>
-            <file>file:/C:/Users/Asif/Documents/GitHub/OOP_Project/OTTprojectF/src/ottprojectf/AppendableObjectOutputStream.java</file>
-            <file>file:/C:/Users/Asif/Documents/GitHub/OOP_Project/OTTprojectF/src/ahnaf/ViewequipmentstatusController.java</file>
+            <file>file:/C:/Users/ASUS/Documents/GitHub/OOP_Project/OTTprojectF/src/erin/ContentCreatorController.java</file>
+            <file>file:/C:/Users/ASUS/Documents/GitHub/OOP_Project/OTTprojectF/src/erin/GenreSelectionController.java</file>
+            <file>file:/C:/Users/ASUS/Documents/GitHub/OOP_Project/OTTprojectF/src/ottprojectf/LogInSceneController.java</file>
+            <file>file:/C:/Users/ASUS/Documents/GitHub/OOP_Project/OTTprojectF/src/erin/genreSelection.fxml</file>
+            <file>file:/C:/Users/ASUS/Documents/GitHub/OOP_Project/OTTprojectF/src/erin/DataAnalyst.fxml</file>
+            <file>file:/C:/Users/ASUS/Documents/GitHub/OOP_Project/OTTprojectF/src/erin/DataAnalystController.java</file>
         </group>
     </open-files>
 </project-private>

@@ -55,7 +55,7 @@ public class LogInSceneController implements Initializable {
         categoryComboBox.getItems().addAll("Viewer","CustomerSupport","Subscriber","ManagingDirector","ContentCreator","DataAnalyst","AdvertisementController","MaintainanceOfficer");
       
     }    
-
+/**
     @FXML
     private void logInValidateButtonOnClicked(ActionEvent event) throws IOException {
         //validateLogIn();
@@ -70,7 +70,7 @@ public class LogInSceneController implements Initializable {
             }
         }
         logInMessageLabel.setText("Failed!");
-    }
+    } **/
     @FXML
     private void backButtonOnClicked(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("CommonScene.fxml"));
