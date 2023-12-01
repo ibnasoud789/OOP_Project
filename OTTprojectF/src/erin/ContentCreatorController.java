@@ -68,7 +68,12 @@ public class ContentCreatorController implements Initializable {
     }
 
     @FXML
-    private void earningOnAction(ActionEvent event) {
+    private void earningOnAction(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("earnfromContent.fxml"));
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();          
     }
 
     @FXML
