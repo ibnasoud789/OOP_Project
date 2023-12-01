@@ -59,6 +59,7 @@ public class LogInSceneController implements Initializable {
     @FXML
     private void logInValidateButtonOnClicked(ActionEvent event) throws IOException {
         //validateLogIn();
+
       //  subscriberList= new SubscriberList();
     //}
     //private void validateLogIn(String mail,String password, String userType){
