@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="467.0" prefWidth="745.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="erin.CardBankController">
+   <children>
+      <Label layoutX="128.0" layoutY="159.0" text="Enter Your Card Number:" textFill="#a40000">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="128.0" layoutY="206.0" text="Enter Your Contact Number:" textFill="#a40000">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="getcardnum" layoutX="454.0" layoutY="158.0" onAction="#getcardnumOnAction" />
+      <TextField fx:id="getcontact" layoutX="454.0" layoutY="205.0" onAction="#getcontactOnAction" />
+      <Button fx:id="submitbutton" layoutX="346.0" layoutY="278.0" mnemonicParsing="false" onAction="#submitbuttonOnAction" text="Submit" textFill="#9a0000" />
+      <Button fx:id="gobackbutton" layoutX="31.0" layoutY="407.0" mnemonicParsing="false" onAction="#gobackbuttonOnAction" text="Go Back" textFill="#9a0000" />
+   </children>
+</AnchorPane>
