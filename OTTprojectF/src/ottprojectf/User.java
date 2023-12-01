@@ -8,17 +8,42 @@ package ottprojectf;
  *
  * @author Asif
  */
-public class User extends Subscriber {
+public class User {
     
-    public User(String mail, String password) {
-        super(mail, password);
-    }
-    String userType;
+    private String email;
+    private String password;
+    private String usertype;
 
-    public User(String userType, String mail, String password) {
-        super(mail, password);
-        this.userType = userType;
+    public User(String email, String password, String usertype) {
+        this.email = email;
+        this.password = password;
+        this.usertype = usertype;
     }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getUsertype() {
+        return usertype;
+    }
+
+    public void setUsertype(String usertype) {
+        this.usertype = usertype;
+    }
+    
     
     
 }
