@@ -41,19 +41,25 @@ public class LogInSceneController implements Initializable {
     private PasswordField passwordPasswordField;
     @FXML
     private Label logInMessageLabel;
-
-    /**
-     * Initializes the controller class.
-     */
+    
+    
+    
+    @FXML
+    private void categoryComboBoxOnAction(ActionEvent event) {
+        
+    }
+    
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        categoryComboBox.getItems().addAll("Subscriber","Customer Support","Managing Director","Content Creator");
-        categoryComboBox.setValue("Subscriber");
+        categoryComboBox.getItems().addAll("Viewer","CustomerSupport","Subscriber","ManagingDirector","ContentCreator","DataAnalyst","AdvertisementController","MaintainanceOfficer");
+      
     }    
 
     @FXML
     private void logInValidateButtonOnClicked(ActionEvent event) throws IOException {
         //validateLogIn();
+<<<<<<< HEAD
       //  subscriberList= new SubscriberList();
     //}
     //private void validateLogIn(String mail,String password, String userType){
@@ -63,6 +69,19 @@ public class LogInSceneController implements Initializable {
           //  }
         //}
         //logInMessageLabel.setText("Failed!");
+=======
+        subscriberList= new SubscriberList();
+        
+        
+    }
+    private void validateLogIn(String mail,String password, String userType){
+        for (Subscriber subscriber: subscriberList.getSubscribers()){
+            if (subscriber.getMail().equals(mail) && subscriber.getPassword().equals(password)){
+                logInMessageLabel.setText("Success");
+            }
+        }
+        logInMessageLabel.setText("Failed!");
+>>>>>>> 684de472cf25d5201726c37fc3218cac7e95a293
     }
     @FXML
     private void backButtonOnClicked(ActionEvent event) throws IOException {
