@@ -59,7 +59,6 @@ public class LogInSceneController implements Initializable {
     @FXML
     private void logInValidateButtonOnClicked(ActionEvent event) throws IOException {
         //validateLogIn();
-<<<<<<< HEAD
       //  subscriberList= new SubscriberList();
     //}
     //private void validateLogIn(String mail,String password, String userType){
@@ -69,20 +68,10 @@ public class LogInSceneController implements Initializable {
           //  }
         //}
         //logInMessageLabel.setText("Failed!");
-=======
-        subscriberList= new SubscriberList();
-        
-        
+       
     }
-    private void validateLogIn(String mail,String password, String userType){
-        for (Subscriber subscriber: subscriberList.getSubscribers()){
-            if (subscriber.getMail().equals(mail) && subscriber.getPassword().equals(password)){
-                logInMessageLabel.setText("Success");
-            }
-        }
-        logInMessageLabel.setText("Failed!");
->>>>>>> 684de472cf25d5201726c37fc3218cac7e95a293
-    }
+  
+
     @FXML
     private void backButtonOnClicked(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("CommonScene.fxml"));

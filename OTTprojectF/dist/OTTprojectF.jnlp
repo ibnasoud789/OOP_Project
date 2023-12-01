@@ -8,11 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-<<<<<<< HEAD
-    <jar href="OTTprojectF.jar" size="31432" download="eager" />
-=======
-    <jar href="OTTprojectF.jar" size="29655" download="eager" />
->>>>>>> 684de472cf25d5201726c37fc3218cac7e95a293
+    <jar href="OTTprojectF.jar" size="35182" download="eager" />
   </resources>
   <jfx:javafx-desc  width="800" height="600" main-class="ottprojectf.Main"  name="OTTprojectF" />
   <update check="always"/>
