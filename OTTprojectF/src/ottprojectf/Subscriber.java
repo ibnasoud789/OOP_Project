@@ -12,12 +12,12 @@ import java.util.ArrayList;
 public class Subscriber {
     private String mail;
     private String password;
-    private String userType;
+    //private String userType;
 
-    public Subscriber(String mail, String password, String userType) {
+    public Subscriber(String mail, String password){
         this.mail = mail;
         this.password = password;
-        this.userType = userType;
+       // this.userType = userType;
     }
 
     public String getMail() {
@@ -36,13 +36,5 @@ public class Subscriber {
         this.password = password;
     }
 
-    public String getUserType() {
-        return userType;
-    }
 
-    public void setUserType(String userType) {
-        this.userType = userType;
-    }
-    
-    
 }

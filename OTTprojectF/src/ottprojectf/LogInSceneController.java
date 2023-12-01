@@ -31,7 +31,7 @@ public class LogInSceneController implements Initializable {
     private Scene scene;
     private Parent root;
     //private ArrayList<Subscriber> subscriberList;
-    private SubscriberList subscriberList;
+    //private SubscriberList subscriberList;
     @FXML
     private TextField emailTextField;
     private TextField passwordTextField;
@@ -65,7 +65,7 @@ public class LogInSceneController implements Initializable {
     }
     private void validateLogIn(String mail,String password, String userType){
         for (Subscriber subscriber: subscriberList.getSubscribers()){
-            if (subscriber.getMail().equals(mail) && subscriber.getPassword().equals(password) && subscriber.getUserType().equals(userType)){
+            if (subscriber.getMail().equals(mail) && subscriber.getPassword().equals(password)){
                 logInMessageLabel.setText("Success");
             }
         }
