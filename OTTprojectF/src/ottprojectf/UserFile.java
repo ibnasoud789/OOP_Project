@@ -22,7 +22,7 @@ public class UserFile {
         ObjectOutputStream oos = null;
         Boolean result=false;
         try{
-            f= new File(nameFile+"LoginInfo.bin");
+            f= new File(nameFile+"users.txt");
             if(f.exists()){
                  
                  fos = new FileOutputStream(f,true);
