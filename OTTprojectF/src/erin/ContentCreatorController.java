@@ -72,7 +72,12 @@ public class ContentCreatorController implements Initializable {
     }
 
     @FXML
-    private void logginOutOnAction(ActionEvent event) {
+    private void logginOutOnAction(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("CommonScene.fxml"));
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();  
     }
 
     @FXML

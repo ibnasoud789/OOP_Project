@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="503.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="erin.DataAnalystController">
+   <children>
+      <ImageView fitHeight="585.0" fitWidth="1110.0" layoutX="6.0" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Downloads/shutterstock_1770654182_d43667c1bc.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="352.0" layoutY="49.0" text="WELCOME TO YOUR DASHBOARD!" textFill="#970000">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="137.0" layoutY="144.0" text="View &amp; Update Your Profile" textFill="#970000">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="137.0" layoutY="198.0" text="Show The Users List" textFill="#970000">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="137.0" layoutY="252.0" text="Advertisement Setting" textFill="#970000">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="137.0" layoutY="302.0" text="View Engagement" textFill="#970000">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="137.0" layoutY="355.0" text="Data Setting" textFill="#970000">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="viewProfile" layoutX="417.0" layoutY="144.0" mnemonicParsing="false" onAction="#viewProfileOnAction" text="Click here!" />
+      <Button fx:id="usersList" layoutX="417.0" layoutY="197.0" mnemonicParsing="false" onAction="#usersListOnAction" text="Click here!" />
+      <Button fx:id="advertisement" layoutX="417.0" layoutY="251.0" mnemonicParsing="false" onAction="#advertisementOnAction" text="Click here!" />
+      <Button fx:id="engagement" layoutX="417.0" layoutY="301.0" mnemonicParsing="false" onAction="#engagementOnAction" text="Click here!" />
+      <Button fx:id="dataCheck" layoutX="417.0" layoutY="354.0" mnemonicParsing="false" onAction="#dataCheckOnAction" text="Click here!" />
+      <Button fx:id="goBack" layoutX="53.0" layoutY="468.0" mnemonicParsing="false" onAction="#goBackOnAction" text="Go Back" />
+      <Button fx:id="logOutToHomePage" layoutX="988.0" layoutY="468.0" mnemonicParsing="false" onAction="#logOutToHomePageOnAction" text="Log Out" />
+      <Line endX="14.0" endY="289.0" layoutX="96.0" layoutY="113.0" startX="14.0" startY="18.0" />
+      <ImageView fitHeight="309.0" fitWidth="343.0" layoutX="773.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Downloads/Untitled-2-01.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

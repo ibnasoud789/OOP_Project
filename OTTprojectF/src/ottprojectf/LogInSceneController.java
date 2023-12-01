@@ -41,20 +41,27 @@ public class LogInSceneController implements Initializable {
     private PasswordField passwordPasswordField;
     @FXML
     private Label logInMessageLabel;
-
-    /**
-     * Initializes the controller class.
-     */
+    
+    
+    
+    @FXML
+    private void categoryComboBoxOnAction(ActionEvent event) {
+        
+    }
+    
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        categoryComboBox.getItems().addAll("Subscriber","Customer Support","Managing Director","Content Creator");
-        categoryComboBox.setValue("Subscriber");
+        categoryComboBox.getItems().addAll("Viewer","CustomerSupport","Subscriber","ManagingDirector","ContentCreator","DataAnalyst","AdvertisementController","MaintainanceOfficer");
+      
     }    
 
     @FXML
     private void logInValidateButtonOnClicked(ActionEvent event) throws IOException {
         //validateLogIn();
         subscriberList= new SubscriberList();
+        
+        
     }
     private void validateLogIn(String mail,String password, String userType){
         for (Subscriber subscriber: subscriberList.getSubscribers()){
