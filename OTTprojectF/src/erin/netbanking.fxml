@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="471.0" prefWidth="769.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="erin.NetbankingController">
+   <children>
+      <ComboBox fx:id="bankaccount" layoutX="409.0" layoutY="121.0" onAction="#bankaccountOnAction" prefWidth="150.0" />
+      <Label layoutX="87.0" layoutY="123.0" text="Choose Your Banking Account:" textFill="#900000">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="173.0" text="Enter Your Contact Number:" textFill="#900000">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="222.0" text="Enter Your PIN Number:" textFill="#900000">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Line endX="-100.0" endY="204.0" layoutX="166.0" layoutY="84.0" startX="-100.0" />
+      <TextField fx:id="givecontact" layoutX="409.0" layoutY="171.0" onAction="#givecontactOnAction" />
+      <TextField fx:id="givepin" layoutX="409.0" layoutY="220.0" onAction="#givepinOnAction" />
+      <Button fx:id="submitbutton" layoutX="352.0" layoutY="313.0" mnemonicParsing="false" onAction="#submitbuttonOnAction" text="Submit" textFill="#860000">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="gobackbutton" layoutX="31.0" layoutY="419.0" mnemonicParsing="false" onAction="#gobackbuttonOnAction" text="Go Back" textFill="#860000">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

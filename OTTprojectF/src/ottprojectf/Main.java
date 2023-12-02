@@ -9,16 +9,21 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+//import erin.ContentCreatorController;
+//import erin.ContentUploadController;
+
 
 /**
  *
  * @author Asif
+ * 
  */
+
 public class Main extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("LogInScene.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("ContentCreator.fxml"));
         
         Scene scene = new Scene(root);
         
