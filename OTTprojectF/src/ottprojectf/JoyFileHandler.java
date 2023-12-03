@@ -15,9 +15,9 @@ import java.io.ObjectOutputStream;
  *
  * @author Asif
  */
-public class FileHandler {
+public class JoyFileHandler {
 
-    public static void saveUser(Subscriber user, String filePath, boolean append) {
+    public static void saveUser(Joy_Subscriber user, String filePath, boolean append) {
         try (ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream(filePath, append))) {
             outputStream.writeObject(user);
             System.out.println("User data saved successfully!");
@@ -27,10 +27,10 @@ public class FileHandler {
         }
     }
 
-    public static Subscriber loadUser(String filePath) {
-        Subscriber user = null;
+    public static Joy_Subscriber loadUser(String filePath) {
+        Joy_Subscriber user = null;
         try (ObjectInputStream inputStream = new ObjectInputStream(new FileInputStream(filePath))) {
-            user = (Subscriber) inputStream.readObject();
+            user = (Joy_Subscriber) inputStream.readObject();
             System.out.println("User data loaded successfully!");
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();

@@ -28,7 +28,7 @@ import javafx.stage.Stage;
  *
  * @author Asif
  */
-public class LogInSceneController implements Initializable {
+public class Joy_LogInSceneController implements Initializable {
     private Stage stage;
     private Scene scene;
     private Parent root;
@@ -67,9 +67,9 @@ public class LogInSceneController implements Initializable {
         String email=emailTextField.getText();
         String password=passwordTextField.getText();
         
-        boolean isValidLogin=UserFile.UserFileRead(userType, email, password);
+        boolean isValidLogin=Joy_UserFile.UserFileRead(userType, email, password);
         if (isValidLogin){
-            String mail=UserFile.FileRead_forUserEmail(userType, password, password);
+            String mail=Joy_UserFile.FileRead_forUserEmail(userType, password, password);
             Stage currentStage= (Stage) login.getScene().getWindow();
             if (userType.equals("Subscriber")){
         Parent root = FXMLLoader.load(getClass().getResource("SubscriberScene.fxml"));

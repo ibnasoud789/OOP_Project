@@ -15,8 +15,8 @@ import java.io.ObjectOutputStream;
  *
  * @author Asif
  */
-public class UserFile {
-    public static boolean UserFileWrite(User UserInfo,String nameFile){
+public class Joy_UserFile {
+    public static boolean UserFileWrite(Joy_User UserInfo,String nameFile){
         File f = null;
         FileOutputStream fos = null;
         ObjectOutputStream oos = null;
@@ -26,7 +26,7 @@ public class UserFile {
             if(f.exists()){
                  
                  fos = new FileOutputStream(f,true);
-                 oos = new AppendableObjectOutputStream(fos);
+                 oos = new Joy_AppendableObjectOutputStream(fos);
             }
             else{
                  
@@ -60,7 +60,7 @@ public class UserFile {
             ois = new ObjectInputStream(fis);
             while(true){
                 try{
-                    User UserInfo = (User) ois.readObject();
+                    Joy_User UserInfo = (Joy_User) ois.readObject();
                     if(UserInfo.getEmail().equals(mail) && UserInfo.getPassword().equals(password)){
                         result=true;
                         break;
@@ -99,7 +99,7 @@ public class UserFile {
             ois = new ObjectInputStream(fis);
             while(true){
                 try{
-                    User UserInfo = (User) ois.readObject();
+                    Joy_User UserInfo = (Joy_User) ois.readObject();
                     if(UserInfo.getEmail().equals(mail) && UserInfo.getPassword().equals(password)){
                         result=UserInfo.getEmail();
                         break;

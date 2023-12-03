@@ -8,13 +8,13 @@ package ottprojectf;
  *
  * @author Asif
  */
-public class User {
+public class Joy_User {
     
     private String email;
     private String password;
     private String usertype;
 
-    public User(String email, String password, String usertype) {
+    public Joy_User(String email, String password, String usertype) {
         this.email = email;
         this.password = password;
         this.usertype = usertype;

@@ -25,7 +25,7 @@ import javafx.stage.Stage;
  *
  * @author Asif
  */
-public class SubscriptionSceneController implements Initializable {
+public class Joy_SubscriptionSceneController implements Initializable {
     private Stage stage;
     private Scene scene;
     private Parent root;
@@ -61,8 +61,8 @@ public class SubscriptionSceneController implements Initializable {
         String mail=emailTextField.getText();
         String password=passwordTextField.getText();
         String confirmPassword=confirmPasswordTextField.getText();
-        Subscriber newSub=new Subscriber(mail,password);
-        Boolean success=SubscriptionFile.SubscriptionFileWrite(newSub, mail);
+        Joy_Subscriber newSub=new Joy_Subscriber(mail,password);
+        Boolean success=Joy_SubscriptionFile.SubscriptionFileWrite(newSub, mail);
         if(success){
             System.out.println(success);
             Alert a=new Alert(AlertType.CONFIRMATION);

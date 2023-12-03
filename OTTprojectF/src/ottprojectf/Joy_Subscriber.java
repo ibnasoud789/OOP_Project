@@ -9,12 +9,12 @@ import java.util.ArrayList;
  *
  * @author Asif
  */
-public class Subscriber {
+public class Joy_Subscriber {
     private String mail;
     private String password;
     //private String userType;
 
-    public Subscriber(String mail, String password){
+    public Joy_Subscriber(String mail, String password){
         this.mail = mail;
         this.password = password;
        // this.userType = userType;

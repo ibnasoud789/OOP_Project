@@ -8,6 +8,6 @@ package ottprojectf;
  *
  * @author Asif
  */
-public class Appendable {
+public class Joy_EmployeeList {
     
 }

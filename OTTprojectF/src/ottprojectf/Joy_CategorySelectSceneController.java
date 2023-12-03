@@ -16,7 +16,7 @@ import javafx.scene.control.CheckBox;
  *
  * @author Asif
  */
-public class CategorySelectSceneController implements Initializable {
+public class Joy_CategorySelectSceneController implements Initializable {
 
     @FXML
     private CheckBox moviesCheckBox;

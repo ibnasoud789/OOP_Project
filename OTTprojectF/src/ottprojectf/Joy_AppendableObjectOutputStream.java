@@ -16,8 +16,8 @@ import java.io.OutputStream;
  *
  * @author User
  */
-public class AppendableObjectOutputStream extends ObjectOutputStream{
-    public AppendableObjectOutputStream(OutputStream out) throws IOException {
+public class Joy_AppendableObjectOutputStream extends ObjectOutputStream{
+    public Joy_AppendableObjectOutputStream(OutputStream out) throws IOException {
         super(out);
         }
      @Override

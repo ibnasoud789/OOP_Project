@@ -15,8 +15,8 @@ import java.io.ObjectOutputStream;
  *
  * @author Asif
  */
-public class SubscriptionFile {
-    public static boolean SubscriptionFileWrite(Subscriber SubscriptionInfo,String nameFile){
+public class Joy_SubscriptionFile {
+    public static boolean SubscriptionFileWrite(Joy_Subscriber SubscriptionInfo,String nameFile){
         File f = null;
         FileOutputStream fos = null;
         ObjectOutputStream oos = null;
@@ -26,7 +26,7 @@ public class SubscriptionFile {
             if(f.exists()){
                  
                  fos = new FileOutputStream(f,true);
-                 oos = new AppendableObjectOutputStream(fos);
+                 oos = new Joy_AppendableObjectOutputStream(fos);
             }
             else{
                  
@@ -60,7 +60,7 @@ public class SubscriptionFile {
             ois = new ObjectInputStream(fis);
             while(true){
                 try{
-                    Subscriber SubscriptionInfo = (Subscriber) ois.readObject();
+                    Joy_Subscriber SubscriptionInfo = (Joy_Subscriber) ois.readObject();
                     if(SubscriptionInfo.getMail().equals(mail) && SubscriptionInfo.getPassword().equals(password)){
                         result=true;
                         break;
@@ -99,7 +99,7 @@ public class SubscriptionFile {
             ois = new ObjectInputStream(fis);
             while(true){
                 try{
-                    Subscriber SubscriptionInfo = (Subscriber) ois.readObject();
+                    Joy_Subscriber SubscriptionInfo = (Joy_Subscriber) ois.readObject();
                     if(SubscriptionInfo.getMail().equals(mail) && SubscriptionInfo.getPassword().equals(password)){
                         result=SubscriptionInfo.getMail();
                         break;
