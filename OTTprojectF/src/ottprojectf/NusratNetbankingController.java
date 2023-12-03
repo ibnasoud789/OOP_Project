@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
  */
-package erin;
+package ottprojectf;
 
 import java.io.IOException;
 import java.net.URL;
@@ -16,20 +16,22 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-
 /**
  * FXML Controller class
  *
  * @author ASUS
  */
-public class NusratCardBankController implements Initializable {
+public class NusratNetbankingController implements Initializable {
 
     @FXML
-    private TextField getcardnum;
+    private ComboBox<String> bankaccount;
     @FXML
-    private TextField getcontact;
+    private TextField givecontact;
+    @FXML
+    private TextField givepin;
     @FXML
     private Button submitbutton;
     @FXML
@@ -40,15 +42,19 @@ public class NusratCardBankController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        bankaccount.getItems().addAll("AB Bank","Dhaka Bank","MTB");
     }    
 
     @FXML
-    private void getcardnumOnAction(ActionEvent event) {
+    private void bankaccountOnAction(ActionEvent event) {
     }
 
     @FXML
-    private void getcontactOnAction(ActionEvent event) {
+    private void givecontactOnAction(ActionEvent event) {
+    }
+
+    @FXML
+    private void givepinOnAction(ActionEvent event) {
     }
 
     @FXML
@@ -60,7 +66,6 @@ public class NusratCardBankController implements Initializable {
 
         alert.showAndWait();
     }
-    
 
     @FXML
     private void gobackbuttonOnAction(ActionEvent event) throws IOException {
@@ -68,8 +73,7 @@ public class NusratCardBankController implements Initializable {
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         Scene scene = new Scene(root);
         stage.setScene(scene);
-        stage.show(); 
-        
+        stage.show();  
     }
     
 }

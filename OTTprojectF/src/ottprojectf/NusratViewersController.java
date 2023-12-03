@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
  */
-package erin;
+package ottprojectf;
 
 import java.io.IOException;
 import java.net.URL;
@@ -22,16 +22,18 @@ import javafx.stage.Stage;
  *
  * @author ASUS
  */
-public class NusratEarnfromContentController implements Initializable {
+public class NusratViewersController implements Initializable {
 
     @FXML
-    private Button mobileBanking;
+    private Button genreselection;
     @FXML
-    private Button cardPay;
+    private Button videoquality;
     @FXML
-    private Button netBank;
+    private Button videoaccess;
     @FXML
-    private Button goingBack;
+    private Button watchadfree;
+    @FXML
+    private Button logoutbutton;
 
     /**
      * Initializes the controller class.
@@ -42,8 +44,8 @@ public class NusratEarnfromContentController implements Initializable {
     }    
 
     @FXML
-    private void mobileBankingOnAction(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("NusratmobileBank.fxml"));
+    private void genreselectionOnAction(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("genreSelection.fxml"));
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         Scene scene = new Scene(root);
         stage.setScene(scene);
@@ -51,8 +53,16 @@ public class NusratEarnfromContentController implements Initializable {
     }
 
     @FXML
-    private void cardPayOnAction(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("NusratcardBank.fxml"));
+    private void videoqualityOnAction(ActionEvent event) {
+    }
+
+    @FXML
+    private void videoaccessOnAction(ActionEvent event) {
+    }
+
+    @FXML
+    private void watchadfreeOnAction(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("SubscriptionScene.fxml"));
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         Scene scene = new Scene(root);
         stage.setScene(scene);
@@ -60,22 +70,12 @@ public class NusratEarnfromContentController implements Initializable {
     }
 
     @FXML
-    private void netBankOnAction(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Nusratnetbanking.fxml"));
+    private void logoutbuttonOnAction(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("CommonScene.fxml"));
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();  
-    }
-
-    @FXML
-    private void goingBackOnAction(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("NusratContentCreator.fxml"));
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();        
-        
     }
     
 }

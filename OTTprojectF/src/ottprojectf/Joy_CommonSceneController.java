@@ -21,7 +21,7 @@ import javafx.stage.Stage;
  *
  * @author Asif
  */
-public class CommonSceneController implements Initializable {
+public class Joy_CommonSceneController implements Initializable {
     private Stage stage;
     private Scene scene;
     private Parent root;
