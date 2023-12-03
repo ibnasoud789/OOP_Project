@@ -6,14 +6,20 @@ package ahnaf;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.TableColumn;
 
 /**
  * FXML Controller class
  *
  * @author User
  */
-public class MaintainencerequestController implements Initializable {
+public class UpdateinventoryController implements Initializable {
+
+    @FXML
+    private TableColumn<?, ?> updateinventory;
 
     /**
      * Initializes the controller class.
@@ -22,5 +28,9 @@ public class MaintainencerequestController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+
+    @FXML
+    private void UpdateButtonOnClicked(ActionEvent event) {
+    }
     
 }

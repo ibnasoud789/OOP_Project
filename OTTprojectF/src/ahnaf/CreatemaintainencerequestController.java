@@ -6,7 +6,10 @@ package ahnaf;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.TextArea;
 
 /**
  * FXML Controller class
@@ -15,6 +18,9 @@ import javafx.fxml.Initializable;
  */
 public class CreatemaintainencerequestController implements Initializable {
 
+    @FXML
+    private TextArea DescriptionoftheIssue;
+
     /**
      * Initializes the controller class.
      */
@@ -22,5 +28,9 @@ public class CreatemaintainencerequestController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+
+    @FXML
+    private void SubmitButtonOnClicked(ActionEvent event) {
+    }
     
 }

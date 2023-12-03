@@ -9,13 +9,17 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.TableColumn;
 
 /**
  * FXML Controller class
  *
  * @author User
  */
-public class UpdaterequeststatusController implements Initializable {
+public class TrackenergyconsumptionController implements Initializable {
+
+    @FXML
+    private TableColumn<?, ?> Trackenergyconsumption;
 
     /**
      * Initializes the controller class.

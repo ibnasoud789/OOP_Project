@@ -9,13 +9,17 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.TextArea;
 
 /**
  * FXML Controller class
  *
  * @author User
  */
-public class UpdaterequeststatusController implements Initializable {
+public class FeedbackandratingsController implements Initializable {
+
+    @FXML
+    private TextArea givefeedback;
 
     /**
      * Initializes the controller class.
@@ -26,7 +30,7 @@ public class UpdaterequeststatusController implements Initializable {
     }    
 
     @FXML
-    private void UpdateButtonOnClicked(ActionEvent event) {
+    private void submitfeedbackonaction(ActionEvent event) {
     }
     
 }
