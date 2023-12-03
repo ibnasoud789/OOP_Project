@@ -9,9 +9,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import erin.ContentCreatorController;
-import erin.ContentUploadController_1;
-import erin.NetbankingController;
 
 
 /**
