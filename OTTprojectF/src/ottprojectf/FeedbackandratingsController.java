@@ -2,18 +2,24 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
  */
-package ahnaf;
+package ottprojectf;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.TextArea;
 
 /**
  * FXML Controller class
  *
  * @author User
  */
-public class ViewMaintainencerequestController implements Initializable {
+public class FeedbackandratingsController implements Initializable {
+
+    @FXML
+    private TextArea givefeedback;
 
     /**
      * Initializes the controller class.
@@ -22,5 +28,9 @@ public class ViewMaintainencerequestController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+
+    @FXML
+    private void submitfeedbackonaction(ActionEvent event) {
+    }
     
 }

@@ -2,24 +2,24 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
  */
-package ahnaf;
+package ottprojectf;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.TextArea;
+import javafx.scene.control.TableColumn;
 
 /**
  * FXML Controller class
  *
  * @author User
  */
-public class CommunicationmoduleController implements Initializable {
+public class TrackenergyconsumptionController implements Initializable {
 
     @FXML
-    private TextArea Givemessage;
+    private TableColumn<?, ?> Trackenergyconsumption;
 
     /**
      * Initializes the controller class.
@@ -30,7 +30,7 @@ public class CommunicationmoduleController implements Initializable {
     }    
 
     @FXML
-    private void SendButtonOnClicked(ActionEvent event) {
+    private void UpdateButtonOnClicked(ActionEvent event) {
     }
     
 }
