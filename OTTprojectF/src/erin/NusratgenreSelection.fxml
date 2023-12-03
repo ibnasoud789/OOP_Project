@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane id="AnchorPane" prefHeight="556.0" prefWidth="850.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="erin.GenreSelectionController">
+<AnchorPane id="AnchorPane" prefHeight="556.0" prefWidth="850.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="erin.NusratGenreSelectionController">
    <children>
       <ImageView fitHeight="589.0" fitWidth="866.0" opacity="0.25" pickOnBounds="true" preserveRatio="true">
          <image>

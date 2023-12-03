@@ -15,7 +15,9 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
@@ -24,52 +26,59 @@ import javafx.stage.Stage;
  *
  * @author ASUS
  */
-public class CardBankController implements Initializable {
+public class NusratMobileBankController implements Initializable {
 
     @FXML
-    private TextField getcardnum;
+    private ComboBox<String> combobox;
     @FXML
-    private TextField getcontact;
+    private TextField mobilenum;
+    @FXML
+    private TextField pinnum;
     @FXML
     private Button submitbutton;
     @FXML
-    private Button gobackbutton;
+    private Button backbutton;
 
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        combobox.getItems().addAll("Bkash","Nogod");
     }    
 
     @FXML
-    private void getcardnumOnAction(ActionEvent event) {
+    private void comboboxOnAction(ActionEvent event) {
     }
 
     @FXML
-    private void getcontactOnAction(ActionEvent event) {
+    private void mobilenumOnAction(ActionEvent event) {
+        
+    }
+
+    @FXML
+    private void pinnumOnAction(ActionEvent event) {
     }
 
     @FXML
     private void submitbuttonOnAction(ActionEvent event) {
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        Alert alert = new Alert(AlertType.INFORMATION);
         alert.setTitle("Success");
         alert.setHeaderText(null);
         alert.setContentText("Operation successful!");
 
         alert.showAndWait();
     }
+
     
 
     @FXML
-    private void gobackbuttonOnAction(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("earnfromContent.fxml"));
+    private void backbuttonOnAction(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("NusratearnfromContent.fxml"));
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         Scene scene = new Scene(root);
         stage.setScene(scene);
-        stage.show(); 
-        
+        stage.show();           
     }
     
 }

@@ -15,54 +15,51 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
-import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-
 /**
  * FXML Controller class
  *
  * @author ASUS
  */
-public class MobileBankController implements Initializable {
+public class NusratNetbankingController implements Initializable {
 
     @FXML
-    private ComboBox<String> combobox;
+    private ComboBox<String> bankaccount;
     @FXML
-    private TextField mobilenum;
+    private TextField givecontact;
     @FXML
-    private TextField pinnum;
+    private TextField givepin;
     @FXML
     private Button submitbutton;
     @FXML
-    private Button backbutton;
+    private Button gobackbutton;
 
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        combobox.getItems().addAll("Bkash","Nogod");
+        bankaccount.getItems().addAll("AB Bank","Dhaka Bank","MTB");
     }    
 
     @FXML
-    private void comboboxOnAction(ActionEvent event) {
+    private void bankaccountOnAction(ActionEvent event) {
     }
 
     @FXML
-    private void mobilenumOnAction(ActionEvent event) {
-        
+    private void givecontactOnAction(ActionEvent event) {
     }
 
     @FXML
-    private void pinnumOnAction(ActionEvent event) {
+    private void givepinOnAction(ActionEvent event) {
     }
 
     @FXML
     private void submitbuttonOnAction(ActionEvent event) {
-        Alert alert = new Alert(AlertType.INFORMATION);
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Success");
         alert.setHeaderText(null);
         alert.setContentText("Operation successful!");
@@ -70,15 +67,13 @@ public class MobileBankController implements Initializable {
         alert.showAndWait();
     }
 
-    
-
     @FXML
-    private void backbuttonOnAction(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("earnfromContent.fxml"));
+    private void gobackbuttonOnAction(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("NusratearnfromContent.fxml"));
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         Scene scene = new Scene(root);
         stage.setScene(scene);
-        stage.show();           
+        stage.show();  
     }
     
 }
