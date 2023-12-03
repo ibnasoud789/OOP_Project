@@ -22,7 +22,7 @@ import javafx.stage.Stage;
  *
  * @author ASUS
  */
-public class EarnfromContentController implements Initializable {
+public class NusratEarnfromContentController implements Initializable {
 
     @FXML
     private Button mobileBanking;
@@ -42,20 +42,35 @@ public class EarnfromContentController implements Initializable {
     }    
 
     @FXML
-    private void mobileBankingOnAction(ActionEvent event) {
+    private void mobileBankingOnAction(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("NusratmobileBank.fxml"));
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();  
     }
 
     @FXML
-    private void cardPayOnAction(ActionEvent event) {
+    private void cardPayOnAction(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("NusratcardBank.fxml"));
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();  
     }
 
     @FXML
-    private void netBankOnAction(ActionEvent event) {
+    private void netBankOnAction(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("Nusratnetbanking.fxml"));
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();  
     }
 
     @FXML
     private void goingBackOnAction(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("ContentCreator.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("NusratContentCreator.fxml"));
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         Scene scene = new Scene(root);
         stage.setScene(scene);

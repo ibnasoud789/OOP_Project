@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="511.0" prefWidth="831.0" style="-fx-background-color: Black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ottprojectf.ContentUploadController_1">
+<AnchorPane id="AnchorPane" prefHeight="511.0" prefWidth="831.0" style="-fx-background-color: Black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="erin.NusratContentUploadController_1">
    <children>
       <Label layoutX="298.0" layoutY="60.0" text="Content Upload" textFill="WHITE">
          <font>
@@ -42,5 +42,10 @@
          </font>
       </Label>
       <ComboBox fx:id="categorySelection" layoutX="260.0" layoutY="300.0" prefWidth="150.0" />
+      <Button fx:id="backbutton" layoutX="14.0" layoutY="463.0" mnemonicParsing="false" onAction="#backbuttonOnAction" prefHeight="34.0" prefWidth="63.0" style="-fx-background-color: Pink;" text="Go Back" textFill="#515151">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

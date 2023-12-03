@@ -22,7 +22,7 @@ import javafx.stage.Stage;
  *
  * @author ASUS
  */
-public class ViewersController implements Initializable {
+public class NusratViewersController implements Initializable {
 
     @FXML
     private Button genreselection;

@@ -23,7 +23,7 @@ import javafx.stage.Stage;
  *
  * @author ASUS
  */
-public class ContentCreatorController implements Initializable {
+public class NusratContentCreatorController implements Initializable {
 
     @FXML
     private Button profileCheck;
@@ -52,7 +52,7 @@ public class ContentCreatorController implements Initializable {
 
     @FXML
     private void contentStreamOnAction(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("ContentStream.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("NusratContentStream.fxml"));
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         Scene scene = new Scene(root);
         stage.setScene(scene);
@@ -61,7 +61,7 @@ public class ContentCreatorController implements Initializable {
 
     @FXML
     private void uploadVideoOnAction(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("ContentUpload.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("NusratContentUpload.fxml"));
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         Scene scene = new Scene(root);
         stage.setScene(scene);
@@ -70,7 +70,7 @@ public class ContentCreatorController implements Initializable {
 
     @FXML
     private void earningOnAction(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("earnfromContent.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("NusratearnfromContent.fxml"));
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         Scene scene = new Scene(root);
         stage.setScene(scene);

@@ -14,62 +14,66 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+
 /**
  * FXML Controller class
  *
  * @author ASUS
  */
-public class NetbankingController implements Initializable {
+public class NusratDataAnalystController implements Initializable {
 
     @FXML
-    private ComboBox<String> bankaccount;
+    private Button viewProfile;
     @FXML
-    private TextField givecontact;
+    private Button usersList;
     @FXML
-    private TextField givepin;
+    private Button advertisement;
     @FXML
-    private Button submitbutton;
+    private Button engagement;
     @FXML
-    private Button gobackbutton;
+    private Button dataCheck;
+    @FXML
+    private Button goBack;
+    @FXML
+    private Button logOutToHomePage;
 
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        bankaccount.getItems().addAll("AB Bank","Dhaka Bank","MTB");
+        // TODO
     }    
 
     @FXML
-    private void bankaccountOnAction(ActionEvent event) {
+    private void viewProfileOnAction(ActionEvent event) {
     }
 
     @FXML
-    private void givecontactOnAction(ActionEvent event) {
+    private void usersListOnAction(ActionEvent event) {
     }
 
     @FXML
-    private void givepinOnAction(ActionEvent event) {
+    private void advertisementOnAction(ActionEvent event) {
     }
 
     @FXML
-    private void submitbuttonOnAction(ActionEvent event) {
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("Success");
-        alert.setHeaderText(null);
-        alert.setContentText("Operation successful!");
-
-        alert.showAndWait();
+    private void engagementOnAction(ActionEvent event) {
     }
 
     @FXML
-    private void gobackbuttonOnAction(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("earnfromContent.fxml"));
+    private void dataCheckOnAction(ActionEvent event) {
+    }
+
+    @FXML
+    private void goBackOnAction(ActionEvent event) {
+    }
+
+    @FXML
+    private void logOutToHomePageOnAction(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("CommonScene.fxml"));
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         Scene scene = new Scene(root);
         stage.setScene(scene);

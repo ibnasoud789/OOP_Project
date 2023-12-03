@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane id="AnchorPane" prefHeight="523.0" prefWidth="869.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="erin.EarnfromContentController">
+<AnchorPane id="AnchorPane" prefHeight="523.0" prefWidth="869.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="erin.NusratEarnfromContentController">
    <children>
       <Label layoutX="248.0" layoutY="50.0" text="SELECT ONE METHOD OF PAYMENT" textFill="#a40000">
          <font>

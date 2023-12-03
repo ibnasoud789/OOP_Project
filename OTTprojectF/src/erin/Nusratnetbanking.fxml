@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane id="AnchorPane" prefHeight="471.0" prefWidth="769.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="erin.NetbankingController">
+<AnchorPane id="AnchorPane" prefHeight="471.0" prefWidth="769.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="erin.NusratNetbankingController">
    <children>
       <ComboBox fx:id="bankaccount" layoutX="409.0" layoutY="121.0" onAction="#bankaccountOnAction" prefWidth="150.0" />
       <Label layoutX="87.0" layoutY="123.0" text="Choose Your Banking Account:" textFill="#900000">

@@ -14,7 +14,7 @@ import javafx.stage.Stage;
  *
  * @author ASUS
  */
-public class Main extends Application {
+public class NusratMain extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {

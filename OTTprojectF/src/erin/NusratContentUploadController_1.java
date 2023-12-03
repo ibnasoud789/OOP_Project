@@ -5,23 +5,29 @@
 package erin;
 
 import java.io.File;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.stage.FileChooser;
 import javafx.stage.FileChooser.ExtensionFilter;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
  *
  * @author ASUS
  */
-public class ContentUploadController_1 implements Initializable {
+public class NusratContentUploadController_1 implements Initializable {
 
     @FXML
     private Button file_selection;
@@ -33,6 +39,8 @@ public class ContentUploadController_1 implements Initializable {
     private ComboBox<Integer> ageselection;
     @FXML
     private ComboBox<String> categorySelection;
+    @FXML
+    private Button backbutton;
 
     /**
      * Initializes the controller class.
@@ -67,6 +75,15 @@ public class ContentUploadController_1 implements Initializable {
         alert.setHeaderText(null);
         alert.setContentText("Video uploaded successfully!");
         alert.showAndWait();
+    }
+
+    @FXML
+    private void backbuttonOnAction(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("NusratContentCreator.fxml"));
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();  
     }
     
     
