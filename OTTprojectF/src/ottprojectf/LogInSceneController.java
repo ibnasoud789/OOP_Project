@@ -32,8 +32,6 @@ public class LogInSceneController implements Initializable {
     private Stage stage;
     private Scene scene;
     private Parent root;
-    //private ArrayList<Subscriber> subscriberList;
-    //private SubscriberList subscriberList;
     @FXML
     private TextField emailTextField;
     private TextField passwordTextField;
@@ -46,9 +44,7 @@ public class LogInSceneController implements Initializable {
     private ComboBox<String> userTypeComboBox;
     @FXML
     private Button login;
-    
-    
-    
+
     @FXML
     private void categoryComboBoxOnAction(ActionEvent event) {
         

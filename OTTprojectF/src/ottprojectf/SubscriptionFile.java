@@ -56,7 +56,7 @@ public class SubscriptionFile {
         ObjectInputStream ois = null;
         Boolean result=false;
         try{
-            fis = new FileInputStream(nameFile+"LoginInfo.bin");
+            fis = new FileInputStream(nameFile+"SubscriptionInfo.bin");
             ois = new ObjectInputStream(fis);
             while(true){
                 try{
@@ -95,7 +95,7 @@ public class SubscriptionFile {
         ObjectInputStream ois = null;
         String result= null;
         try{
-            fis = new FileInputStream(nameFile+"LoginInfo.bin");
+            fis = new FileInputStream(nameFile+"SubscriptionInfo.bin");
             ois = new ObjectInputStream(fis);
             while(true){
                 try{
