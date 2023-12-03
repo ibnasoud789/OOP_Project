@@ -9,9 +9,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import erin.ContentCreatorController;
-import erin.ContentUploadController_1;
-import erin.NetbankingController;
 
 
 /**
@@ -24,7 +21,7 @@ public class Main extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("Netbanking.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("CommonScene.fxml"));
         
         Scene scene = new Scene(root);
         
